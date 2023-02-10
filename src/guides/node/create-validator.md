@@ -1,12 +1,12 @@
 # Creating a New Minipool (Validator)
 
 As a reminder, a `minipool` in Rocket Pool terms refers to a unique smart contract instance on the Execution Layer (ETH1) chain that your node manages.
-The minipool handles 16 of your ETH, 16 ETH from the rETH staking pool, and merges them together so that it can send 32 ETH to the Beacon Chain deposit contract to create a new validator.
+The minipool handles 16 of your ETH, 16 ETH from the rETH staking pool, and merges them together so that it can use the total of 32 ETH to create a new validator.
 Thus, in order to create a validator using Rocket Pool, you need to **create a minipool**.
 
 ::: warning
-Creating a minipool means depositing 16 of your own ETH to the Beacon Chain.
-These funds **cannot be retrieved** until after the Execution Layer (ETH1) has merged with the Beacon Chain (ETH2) (completed September 15, 2022), and withdrawals have been implemented some time in 2023.
+Creating a minipool means depositing 16 of your own ETH to the ETH staking contract.
+These funds **cannot be retrieved** until after the withdrawals have been implemented through an Ethereum protocol upgrade, currently scheduled to occur during the Shanghai upgrade, in early 2023.
 By creating the minipool, you are acknowledging that you are effectively locking these funds until that system is in place.
 :::
 
